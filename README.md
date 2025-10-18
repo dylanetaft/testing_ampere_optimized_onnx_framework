@@ -34,10 +34,10 @@ sess_options.inter_op_num_threads = 1
 outer_threads = 1
 
 # General Findings
-The docker image provides a quick way to be up and running on an optimized version of the Onnx runtime for Ampere.  Out of the box, for the yolov8s world model, it appears to be roughly 80% faster at single, unbatched detection inference vs the vanilla implementation.
+The docker image provides a quick way to be up and running on an optimized version of the Onnx runtime for Ampere.  Out of the box, for the yolov8s world model, it appears to be roughly twice as fast at single, unbatched detection inference vs the vanilla implementation.
 
 # Positive findings
-- It performs much faster at single image inferance - 80% in my test case on q22-64, yolo v8 world v2.
+- It performs much faster at single image inferance - around twice as fast in my test case on q22-64, yolo v8 world v2.
 - It is quick to install
 
 # Negative findings
